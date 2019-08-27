@@ -1,0 +1,53 @@
+//冒泡排序
+    // var arr = [3, 4, 53, 3, 2, 4, 3, 2, 1, 454, 322, 2, 334, 4, 3]
+    // for (var i = 0; i < arr.length - 1; i++) {
+    //   for (var j = 0; j < arr.length - 1 - i; j++) {
+    //     if (arr[j] > arr[j + 1]) {
+    //       var temp = arr[j];
+    //       arr[j] = arr[j + 1];
+    //       arr[j + 1] = temp;
+    //     }
+    //   }
+    // }
+    // console.log(arr);
+
+
+    //冒泡排序优化
+    // var arr = [1, 2, 3, 5, 4, 6];
+    // for (var i = 0; i < arr.length - 1; i++) {
+    //   var flag = 1;
+    //   var a = 0;
+    //   a = a++;
+    //   console.log(a);
+    //   for (var j = 0; j < arr.length - i - 1; j++) {
+    //     if (arr[j] > arr[j + 1]) {
+    //       var temp = arr[j];
+    //       arr[j] = arr[j + 1];
+    //       arr[j + 1] = temp;
+    //       flag = 0;
+    //     }
+    //   }
+    //   if (flag === 1) {
+    //     break;
+    //   }
+    // }
+    // console.log(arr);
+
+
+
+    //数组去重
+    var arr = [2, 3, 4, 3, 3, 2, 2, 3, 4, 5, 5, 4, 3];
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+      var flag = 0;
+      for (var j = 0; j < result.length; j++) {
+        if (arr[i] === result[j]) {
+          flag = 1;
+          break;
+        }
+      }
+      if (flag === 0) {
+        result[result.length] = arr[i];
+      }
+    }
+    console.log(result);
