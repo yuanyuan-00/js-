@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="checkbox" class="btnAll">全选
+  <input type="checkbox" class="btn">选项1
+  <input type="checkbox" class="btn">选项2
+  <input type="checkbox" class="btn">选项3
+  <script>
+    var btns = document.getElementsByClassName('btnAll')[0];
+    var btn = document.getElementsByClassName('btn');
+    var flag = 1;
+    /*  btns.onclick = function() {
+       for (var i = 0; i < btn.length; i++) {
+         btn[i].checked = this.checked;
+       }
+     }
+     for (var i = 0; i < btn.length; i++) {
+       btn[i].onclick = function() {
+         flag = 1;
+         for (var j = 0; j < btn.length; j++) {
+           if (!btn[j].checked) {
+             flag = 0;
+             break;
+           }
+         }
+         btns.checked = flag;
+       }
+     } */
+
+    /* btns.onclick = function() {
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].checked = this.checked;
+      }
+    }
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].onclick = function() {
+        flag = 1;
+        for (var j = 0; j < btn.length; j++) {
+          if (!btn[j].checked) {
+            flag = 0;
+            break;
+          }
+        }
+        btns.checked = flag;
+      }
+    } */
+
+    /*  btns.onclick = function() {
+       for (var i = 0; i < btn.length; i++) {
+         btn[i].checked = btns.checked;
+       }
+     }
+     for (var i = 0; i < btn.length; i++) {
+       btn[i].onclick = function() {
+         flag = 1;
+         for (var j = 0; j < btn.length; j++) {
+           if (!btn[j].checked) {
+             flag = 0;
+             break
+           }
+         }
+         btns.checked = flag;
+       }
+     } */
+
+
+    /* btns.onclick = function() {
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].checked = btns.checked;
+      }
+    }
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].onclick = function() {
+        flag = 1;
+        for (var j = 0; j < btn.length; j++) {
+          if (!btn[j].checked) {
+            flag = 0;
+            break;
+          }
+        }
+        btns.checked = flag;
+
+      }
+    } */
+
+
+    /* btns.onclick = function() {
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].checked = btns.checked;
+      }
+    }
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].onclick = function() {
+        flag = 1;
+        for (var j = 0; j < btn.length; j++) {
+          if (!btn[j].checked) {
+            flag = 0;
+            break;
+          }
+        }
+        btns.checked = flag;
+      }
+    } */
+  </script>
+</body>
+
+</html>
