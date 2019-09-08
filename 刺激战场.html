@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    img {
+      width: 600px;
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <button data-src='images/01.jpg'>海岛</button>
+    <button data-src='images/02.jpg'>雨林</button>
+    <button data-src='images/03.jpg'>沙漠</button>
+    <button data-src='images/04.jpg'>雪地</button>
+  </div>
+  <img src="images/01.jpg" alt="">
+  <script>
+    var btns = document.getElementsByTagName('button');
+    var img = document.getElementsByTagName('img')[0];
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = function() {
+        img.src = this.dataset.src;
+      }
+    }
+  </script>
+</body>
+
+</html>
